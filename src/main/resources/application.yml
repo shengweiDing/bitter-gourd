@@ -1,0 +1,24 @@
+server:
+  port: 8080
+  undertow:
+    threads:
+      ## 设置IO线程树
+      io: 4
+      ## 阻塞任务线程池
+      worker: 20
+    buffer-size: 2048
+    direct-buffers: true
+spring:
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 100MB
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://1.117.75.114:3306/bitter_gourd?serverTimezone=Asia/Shanghai
+    name: root
+    password: root
+  mvc:
+    servlet:
+      path: bitter
+
