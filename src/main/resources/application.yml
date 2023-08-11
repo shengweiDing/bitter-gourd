@@ -15,7 +15,7 @@ spring:
       max-request-size: 100MB
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://1.117.75.114:3306/bitter_gourd?serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://xxxxxxxxxxxx:3306/bitter_gourd?serverTimezone=Asia/Shanghai
     name: root
     password: root
   mvc:
